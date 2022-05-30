@@ -1,0 +1,13 @@
+<h1> List of Tasks to be done</h1>
+<ul>
+    {% for item in object_list %}
+        <li>
+            {{item.title}}
+        </li>
+        <ul>
+            <li>
+                <a href="delete/{{item.id}}">DELETE</a>
+            </li>
+        </ul>
+    {% endfor %}
+</ul>

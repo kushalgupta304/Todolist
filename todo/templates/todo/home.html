@@ -1,0 +1,12 @@
+<h1>Welcome to ToDolist</h1>
+<ul>
+    <li>
+        <a href="{% url "todo:list"%}">List all tasks</a>
+    </li>
+    <li>
+        <a href="{% url "todo:create"%}">Add a task tasks</a>
+    </li>
+    {% comment %} <li>
+        <a href="{% url "todo:delete"%}">Delete a tasks</a>
+    </li>  {% endcomment %}
+</ul>
